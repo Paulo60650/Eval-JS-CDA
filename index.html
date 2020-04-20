@@ -25,42 +25,39 @@
         <legend class="titre2">Vos coordonnées</legend>
         <div class="form-row">
           <label for="societe">Societe*</label>
-          <input type="text" id="societe" class="form-control" name="societe" placeholder="Durex"
-            onkeyup="verifSoc(this.value)">
+          <input type="text" id="societe" class="form-control" name="societe" placeholder="Durex">
           <span id="errSoc"></span>
         </div>
         <div class="form-row">
           <label for="personne">Personne a contacter*</label>
-          <input type="text" id="personne" class="form-control" name="personne" placeholder="Thierry"
-            onkeyup="verifPersonne(this.value)">
+          <input type="text" id="personne" class="form-control" name="personne" placeholder="Thierry">
           <span id="errPersonne"></span>
         </div>
         <div class="form-row">
           <label for="adresse">Adresse de l'entreprise</label>
-          <input id="adresse" type="text" class="form-control" name="adresse" placeholder="30 Rue de Poulainville"
-            onkeyup="verifAdr(this.value)">
+          <input id="adresse" type="text" class="form-control" name="adresse" placeholder="30 Rue de Poulainville">
           <span id="errAdr"></span>
         </div>
         <div class="form-row">
-          <label for="code postal">Code postal</label>
-          <input id="codepost" type="text" class="form-control" name="code postal" placeholder="80000"
-            onkeyup="verifCP(this.value)">
+          <label for="code-postal">Code postal</label>
+          <input id="codepost" type="text" class="form-control" name="code-postal" placeholder="80000">
           <span id="errCP"></span>
         </div>
         <div class="form-row">
-          <label for="city">Ville</label>
-          <input id="ville" type="text" class="form-control" name="ville" placeholder="Amiens"
-            onkeyup="verifCity(this.value)">
+          <label for="ville">Ville</label>
+          <input id="ville" type="text" class="form-control" name="ville" placeholder="Amiens">
           <span id="errVille"></span>
         </div>
         <div class="form-row">
           <label for="mail">Email*</label>
-          <input id="mail" type="text" class="form-control" name="mail" placeholder="dave.loper@afpa.com"
-            onkeyup="verifMail(this.value)">
+          <input id="mail" type="text" class="form-control" name="mail" placeholder="dave.loper@afpa.com">
           <span id="errMail"></span>
         </div>
+      </fieldset>
+
+      <fieldset>
+        <legend class="titre2">Environnement technique du projet</legend>
         <div>
-          <legend class="titre2">Environnement technique du projet</legend>
           <label>Selection* :</label>
           <select id="select">
             <option value="1">Choisissez</option>
@@ -77,13 +74,12 @@
             <option value="SQL Server">SQL Server</option>
             <option value="Oracle">Oracle</option>
             <option value="1">Autres..</option>
-          </select><br>
+          </select>
           <span id="errSelect"></span>
-          <textarea class="form-control" id="envir" name="environnement" aria-label="With textarea"
-            onkeyup="verifEnv(this.value)"></textarea>
+          <textarea class="form-control" id="envir" name="environnement" aria-label="With textarea"></textarea>
           <span id="errEnv"></span>
-          <input type="checkbox" class="form-check-input" id="accept"> J'accepte le traitement informatique de ce
-          formulaire<br>
+          <input type="checkbox" class="form-check-input" id="accept">
+          <p>J'accepte le traitement informatique de ce formulaire</p>
           <span id="errAccept"></span>
           <div id="bouton">
             <input id="envoie" class="btn btn-primary" type="submit" value="Envoyer">
@@ -104,6 +100,6 @@
     crossorigin="anonymous"></script>
   <script src="assets/JS/script.js"></script>
 </body>
-</body>
+
 
 </html>

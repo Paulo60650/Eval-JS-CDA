@@ -175,3 +175,38 @@ environnement.addEventListener("change", function () {
         document.getElementById("envir").textContent += select + "\n";
     }
 });
+
+// Controle grace a l'event keyup et au fonction defini plus haut
+var societe = document.getElementById("societe");
+societe.addEventListener("keyup", function keySoc() {
+    verifSoc(this.value);
+});
+
+var personne = document.getElementById("personne");
+personne.addEventListener("keyup", function keyPers() {
+    verifPersonne(this.value);
+});
+
+var codepost = document.getElementById("codepost");
+codepost.addEventListener("keyup", function keyCP() {
+    verifCP(this.value);
+});
+
+var adresse = document.getElementById("adresse");
+adresse.addEventListener("keyup", function keyAdr() {
+    verifAdr(this.value);
+});
+
+var ville = document.getElementById("ville");
+ville.addEventListener("keyup", function keyVille() {
+    verifCity(this.value);
+});
+var email = document.getElementById("mail");
+email.addEventListener("keyup", function keyMail() {
+    verifMail(this.value);
+});
+
+var envir = document.getElementById("envir");
+envir.addEventListener("keyup", function keyEnv() {
+    verifEnv(this.value);
+});
