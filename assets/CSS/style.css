@@ -1,0 +1,13 @@
+header{
+    text-align: center;
+}
+#obligatoire{
+    color: crimson;
+}
+#bouton{
+    margin-left: 60%;
+    margin-top: 10%;
+}
+#errSoc,#errPersonne,#errAdr,#errCP,#errVille,#errMail,#errSelect,#errAccept,#errEnv{
+    width: 100%;
+}
